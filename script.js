@@ -2,8 +2,8 @@
 var generateBtn = document.querySelector("#generate");
 
 var uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-var lowercaseCharacters = "abc"
-var numbers = "123"
+var lowercaseCharacters = "abcdefghijklmnopqurstuvwxyz"
+var numbers = "1234567890"
 var special = "!@#"
 
 // Write password to the #password input
@@ -26,7 +26,7 @@ function generatePassword() {
     return generatePassword();
   }
  var needsUppercase = confirm("Would you like to add an uppercase character(s)");
- var needsLowercase = confirm("Would you like to add an lowercase character(s)");
+ var needsLowercase = confirm("Would you like to add a lowercase character(s)");
  var needsNumbers = confirm("Would you like to add a numerical character(s)");
  var specialCharacters = confirm("Would you like to add special character(s)");
  if (!needsUppercase && !needsLowercase && !needsNumbers && !specialCharacters){
